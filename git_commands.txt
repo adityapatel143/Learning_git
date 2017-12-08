@@ -1,3 +1,5 @@
+Source : https://www.edureka.co/blog/git-tutorial/
+
 1. Go to local dir on system and right click then click "Git Bash Here"
 
 2. To initialize
@@ -58,4 +60,11 @@ Note:	$ git commit -a -m "<message>"	:to commit all the files at once.
 	$ git merge <branch_name>
 Note: while merging be on the destination (ex. master)
 
-10. 
+10.This is also a way of combining the work between different branches. Rebasing takes a set of commits, copies them and stores them outside your repository.
+
+The advantage of rebasing is that it can be used to make linear sequence of commits. The commit log or history of the repository stays clean if rebasing is done.
+
+	$ git rebase master
+Note: Rebasing also prevents upstream merges, meaning you cannot place master right after newBranch.
+
+This command will move all our work from current branch to the master. They look like as if they are developed sequentially, but they are developed parallelly. 
