@@ -46,3 +46,13 @@ Note:	$ git commit -a -m "<message>"	:to commit all the files at once.
 	
 	ii) creating the new branch
 		$ git branch <branch name>
+	
+	iii) Switching to the branch
+		$ git checkout <branch_name>
+
+	iv) create a new branch and checkout the new branch at the same time.
+		$ git checkout -b[ branch_name]
+
+9. Merging: It is the way to combine the work of different branches together. This will allow us to branch off, develop a new feature, and then combine it back in.
+
+	$ git merge <branch_name>
