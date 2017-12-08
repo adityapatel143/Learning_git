@@ -3,18 +3,52 @@
 2. To initialize
 	$ git init
 
-3. Get the status of local dir
+3. Pull: The git pull command fetches changes from a remote repository to a local repository.
+
+	i) first, you need to set your central repository as origin using the command.
+		$ git remote add origin <link of your central repository>
+
+	ii) Now that my origin is set, let us extract files from the origin using pull.
+		$ git pull origin master
+
+	iii) One can also try pulling files from a different branch
+		$ git pull origin <branch-name>
+
+4. Get the status of local dir
 	$ git status
 
-4. Add any new or modified files to the index. this has to be done before commit.
+5. Add any new or modified files to the index. this has to be done before commit.
 	$ git add <directory>
 		or
 	$ git add <file>
 
 Note:	$ git add -A	:to add all the files at once.
 
-5. Commit: it only copies the changes made in the repository.
+6. Commit: it only copies the changes made in the repository.
 
 	$ git commit -m "<message>"
 
 Note:	$ git commit -a -m "<message>"	:to commit all the files at once.
+
+7. Creating branch: this will create the branch of master copy.
+	$ git branch <branch name>
+
+8. Branches in Git are nothing but pointers to a specific commit.
+	==> local branches: 
+		A local branch is just another path of your working tree.		
+				
+	==> remote tracking branches.
+		A. They link your work from the local repository to the work on central repository.
+		B. They automatically detect which remote branches to get changes from, when you use git pull.
+	
+	i) Checking the current branch:
+		$ git branch
+	
+	ii) creating the new branch
+		$ git branch <branch name>
+	
+	iii) Switching to the branch
+		$ git checkout <branch_name>
+
+	iv) create a new branch and checkout the new branch at the same time.
+		$ git checkout -b[ branch_name]
