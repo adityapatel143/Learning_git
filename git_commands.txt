@@ -30,6 +30,7 @@ Note:	$ git add -A	:to add all the files at once.
 
 Note:	$ git commit -a -m "<message>"	:to commit all the files at once.
 
+<<<<<<< HEAD
 7. Creating branch: this will create the branch of master copy.
 	$ git branch <branch name>
 
@@ -58,3 +59,8 @@ Note:	$ git commit -a -m "<message>"	:to commit all the files at once.
 	$ git merge <branch_name>
 
 10. 
+=======
+6. Creating branch: this will create the branch of master copy.
+	$ git branch <branch name>
+
+>>>>>>> added pull to git_command file
