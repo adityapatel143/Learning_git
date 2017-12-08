@@ -1,0 +1,20 @@
+1. Go to local dir on system and right click then click "Git Bash Here"
+
+2. To initialize
+	$ git init
+
+3. Get the status of local dir
+	$ git status
+
+4. Add any new or modified files to the index. this has to be done before commit.
+	$ git add <directory>
+		or
+	$ git add <file>
+
+Note:	$ git add -A	:to add all the files at once.
+
+5. Commit: it only copies the changes made in the repository.
+
+	$ git commit -m "<message>"
+
+Note:	$ git commit -a -m "<message>"	:to commit all the files at once.
