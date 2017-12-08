@@ -18,3 +18,7 @@ Note:	$ git add -A	:to add all the files at once.
 	$ git commit -m "<message>"
 
 Note:	$ git commit -a -m "<message>"	:to commit all the files at once.
+
+6. Creating branch: this will create the branch of master copy.
+	$ git branch <branch name>
+
